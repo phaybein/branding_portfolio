@@ -1,0 +1,114 @@
+/* NAVBAR */
+
+
+/* 
+*Remove decorations from all links 
+*/
+.nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* 
+* Adjust font size for tablets and above
+ */
+@media screen and (min-width: 768px) {
+
+    .nav {
+        font-size: 8px;
+        font-weight: 600;
+    }
+}
+
+.nav {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 38px;
+    padding-top: 20px;
+}
+
+.nav .container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .nav .container {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+.nav__logo,
+.nav__links {
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .nav__logo,
+    .nav__links {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav__logo {
+        margin-right: 16px;
+    }
+
+    .nav__logo:last-child {
+        margin-right: 0;
+    }
+}
+
+.nav__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .nav__links {
+        margin-right: auto;
+    }
+
+    .nav__links a:first-child {
+        padding-left: 0;
+    }
+}
+
+
+.nav__links a {
+    color: $primary;
+    padding: 5px 11px;
+    transition: $transition;
+}
+
+.nav__links a:hover {
+    color: $secondary;
+}
+
+.nav__buttons .btn {
+    font-size: 8px;
+    padding: 10px 28px;
+    text-decoration: none;
+    min-width: 89px;
+}
+
+.nav__buttons .btn:first-child {
+    margin-right: 10px;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:375px) {
+    .nav__buttons .btn:first-child {
+        margin-bottom: 0;
+    }
+}
+
+.nav__buttons .fa-shopping-bag {
+    margin-left: 12px;
+}

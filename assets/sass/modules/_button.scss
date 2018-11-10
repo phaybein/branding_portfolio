@@ -1,0 +1,74 @@
+%btn {
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bolder;
+    opacity: 1;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: $transition;
+    min-width: 200px;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+.btn--primary {
+    @extend %btn;
+    background: $primary;
+    color: setTextColor($primary);
+}
+
+.btn--primary:hover {
+    box-shadow: $box-shadow--3;
+}
+
+.btn--secondary {
+    @extend %btn;
+    background: $light;
+    border: 1px solid $primary;
+    color: setTextColor($light);
+}
+
+.btn--secondary:hover {
+    color: $secondary;
+    box-shadow: $box-shadow--3;
+}
+
+.btn--third {
+    @extend %btn;
+    box-shadow: none;
+    color: $primary;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.btn--third:hover {
+    opacity: 0.5;
+}
+
+.btn--light {
+    @extend %btn;
+    background: $light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn--light:hover {
+    opacity: 0.8;
+    box-shadow: $box-shadow--3;
+}
+
+.btn--dark {
+    @extend %btn;
+    background: $secondary;
+}
+
+.btn--rounded {
+    @extend %btn;
+    border-radius: 50px;
+}

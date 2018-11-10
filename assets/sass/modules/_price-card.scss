@@ -1,0 +1,20 @@
+.price-card {
+    padding: 0;
+}
+
+.price-card__product {
+    margin: 0 auto;
+}
+
+.price-card__seperator {
+    background: $secondary;
+    display: block;
+    height: 2px;
+    margin: 33px auto 23px;
+    width: 96px;
+
+}
+
+.price-card__price {
+    text-align: center;
+}

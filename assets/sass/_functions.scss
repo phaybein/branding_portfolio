@@ -1,0 +1,20 @@
+/* Functions */
+@function setTextColor($bg-color) {
+    @if(lightness($bg-color) > 50) {
+        @return $dark;
+    }
+
+    @else {
+        @return $light;
+    }
+}
+
+@function setHighlightColor($bg-color) {
+    @if(lightness($bg-color) > 50) {
+        @return $primary;
+    }
+
+    @else {
+        @return $secondary;
+    }
+}
