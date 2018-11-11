@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Voces|Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700');
 
 
 /* font-family: 'Open Sans', sans-serif;
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', "Font Awesome 5 Free";
+    font-family: $body;
     text-rendering: optimizeLegibility;
     text-shadow: 0 0 0 #f00, 0 0 1px transparent;
 }
@@ -25,7 +25,8 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Open Sans', sans-serif, "Font Awesome 5 Free";
+    color: $dark;
+    font-family: $header;
     line-height: 1.2;
 }
 

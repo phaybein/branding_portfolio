@@ -1,11 +1,25 @@
 $primary: #2ebaee;
-$secondary: #FFC646;
+$secondary: #ff5253;
 $light: #f9fbfc;
 $dark: #263c45;
 $gray: #bdbdbd;
 $light-gray: #d9d6d6;
 $dark-gray: #9e9d9d;
 $linear-gradient: linear-gradient(141deg, rgba(159, 184, 173, 0.3) 0%, rgba(31, 200, 219, 0.5) 51%, rgba(44, 181, 232, 0.3) 75%);
+
+// SCREEN SIZES
+$tablet: 600px;
+$laptop: 1024px;
+$desktop: 1600px;
+
+// FONTS
+$body: 'PT Serif',
+'Open Sans',
+"Font Awesome 5 Free";
+$header: 'PT Sans',
+'Open Sans',
+sans-serif,
+"Font Awesome 5 Free";
 
 
 $border-radius: 3px;

@@ -1,18 +1,10 @@
-.btn {
-    font-weight: initial;
+.btn--third {
+    color: $dark;
+    border-bottom: 1px solid $dark;
+    font-family: $header;
     text-decoration: none;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 0;
     min-width: 0;
-}
-
-.btn--secondary {
-    border: none;
-    color: $secondary;
-}
-
-p {
-    min-width: 0;
-}
-
-section {
-    margin: 60px 0;
 }
