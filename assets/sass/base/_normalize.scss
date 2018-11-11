@@ -396,3 +396,16 @@ template {
 [hidden] {
     display: none;
 }
+
+/*
+    * USER GLOBAL CHANGES
+*/
+
+header,
+section {
+    margin: 16px 0;
+
+    @include tablet {
+        margin: 80px 0;
+    }
+}

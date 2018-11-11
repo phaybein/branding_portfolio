@@ -2,10 +2,10 @@
 
 @import '//use.fontawesome.com/releases/v5.4.1/css/all.css';
 @import './variables';
+@import './mixins';
 @import './base/base_dir';
 @import './helpers';
 @import './functions';
-@import './mixins';
 @import './layout/layouts_dir';
 @import './modules/modules_dir';
 @import './user-overrides';
