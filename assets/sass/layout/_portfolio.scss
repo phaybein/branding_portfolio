@@ -1,0 +1,11 @@
+section {
+    .portfolio {
+        &__title {
+            background: #ffeded;
+        }
+
+        &__image {
+            display: block;
+        }
+    }
+}
