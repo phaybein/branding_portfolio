@@ -13,6 +13,10 @@ $laptop: 1024px;
 $desktop: 1600px;
 
 // FONTS
+/*
+* PT Serif & PT Sans
+*/
+/*
 $body: 'PT Serif',
 'Open Sans',
 "Font Awesome 5 Free";
@@ -20,6 +24,20 @@ $header: 'PT Sans',
 'Open Sans',
 sans-serif,
 "Font Awesome 5 Free";
+*/
+
+/*
+* Nunito & Nunito Sans
+*/
+
+$body: 'Nunito Sans',
+'Open Sans',
+"Font Awesome 5 Free";
+$header: 'Nunito',
+'Open Sans',
+sans-serif,
+"Font Awesome 5 Free";
+
 
 
 $border-radius: 3px;
