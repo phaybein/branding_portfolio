@@ -1,32 +1,17 @@
-@media screen and (min-width: 700px) {
-    .card-column-layout {
+.card-column-layout {
+
+    @include tablet {
         display: flex;
         justify-content: space-between;
     }
-}
 
-.call-out {
-    margin-bottom: 0.5rem;
-    padding: 1.5rem;
-}
-
-@media screen and (min-width: 700px) {
     .call-out {
+        margin-bottom: 0.5rem;
+        padding: 1.5rem;
 
-        flex-basis: 30%;
-        margin-bottom: 0;
-
+        @include tablet {
+            flex-basis: 30%;
+            margin-bottom: 0;
+        }
     }
-}
-
-.call-1 {
-    background: lightcoral;
-}
-
-.call-2 {
-    background: lightblue;
-}
-
-.call-3 {
-    background: limegreen;
 }
