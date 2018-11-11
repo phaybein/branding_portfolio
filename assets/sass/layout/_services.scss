@@ -1,41 +1,6 @@
 .services {
     &__container {
-        .services__title {
-            background: #eef9ff;
-            border-radius: 50%;
-            height: 100px;
-            margin: 0 auto 2rem;
-            width: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
 
-            @include tablet {
-                height: 150px;
-                margin: 0 auto 55px;
-                width: 150px;
-            }
-
-            @include laptop {
-                height: 230px;
-                width: 230px;
-            }
-
-            h2 {
-                font-size: 27px;
-                letter-spacing: 4px;
-                text-transform: uppercase;
-
-                @include tablet {
-                    font-size: 40px;
-                }
-
-                @include laptop {
-                    font-size: 61px;
-                    letter-spacing: 11px;
-                }
-            }
-        }
 
         .card-column-layout {
             .call-out {

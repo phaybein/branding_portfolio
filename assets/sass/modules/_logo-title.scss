@@ -1,0 +1,39 @@
+.logo-title {
+    background: #eef9ff;
+    height: 100px;
+    margin: 0 auto 0.5rem;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.rounded {
+        border-radius: 50%;
+    }
+
+    @include tablet {
+        height: 150px;
+        margin: 0 auto 55px;
+        width: 150px;
+    }
+
+    @include laptop {
+        height: 230px;
+        width: 230px;
+    }
+
+    h2 {
+        font-size: 27px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+
+        @include tablet {
+            font-size: 40px;
+        }
+
+        @include laptop {
+            font-size: 61px;
+            letter-spacing: 11px;
+        }
+    }
+}
