@@ -11,6 +11,12 @@
     }
 }
 
+@mixin smLaptop {
+    @media screen and (min-width: #{$smLaptop}) {
+        @content;
+    }
+}
+
 @mixin laptop {
     @media screen and (min-width: #{$laptop}) {
         @content;
