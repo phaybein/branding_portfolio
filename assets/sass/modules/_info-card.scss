@@ -1,0 +1,30 @@
+.info-card {
+    box-shadow: $box-shadow--2;
+    border-radius: $border-radius;
+    padding: 25px 10px;
+
+    &__title {
+        margin-bottom: 0.681rem;
+
+        h3 {
+            font-size: 0.727rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 0.409rem;
+            text-transform: uppercase;
+        }
+
+        small {
+            color: #52b8ff;
+            font-size: 0.59rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__body {
+        color: $gray;
+        font-size: 0.772rem;
+        font-weight: 400;
+    }
+}
