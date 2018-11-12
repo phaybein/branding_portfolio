@@ -1,0 +1,51 @@
+.grid__album {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    grid-auto-rows: minmax(246px, auto);
+    grid-gap: 14px;
+
+    .grid__image {
+        border-radius: $border-radius;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+            background: $dark;
+            border-radius: 9px;
+            color: $light;
+            display: inline-block;
+            font-family: $body;
+            font-weight: 100;
+            letter-spacing: 3px;
+            opacity: 0;
+            padding: 10px 40px;
+            text-transform: uppercase;
+            transform: translate3d(0, 500px, 0);
+        }
+
+        &:hover h3 {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+            transition: all 0.4s ease-in-out;
+        }
+
+        .grid__cover {
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            transition: $transition;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            &:hover {
+                background: none;
+            }
+
+
+        }
+    }
+}
