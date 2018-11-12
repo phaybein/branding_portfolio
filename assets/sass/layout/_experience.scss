@@ -1,6 +1,11 @@
 section.section__experience {
 
     .experience__left {
+        display: none;
+
+        @include smLaptop {
+            display: block;
+        }
 
         .left__square {
             @include smLaptop {
@@ -13,15 +18,19 @@ section.section__experience {
             }
 
             .left__inner-square {
-                border: 4px solid $light;
-                height: 165px;
-                width: 165px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include smLaptop {
+                    border: 4px solid $light;
+                    height: 165px;
+                    width: 165px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
 
                 h3 {
-                    color: $light;
+                    @include smLaptop {
+                        color: $light;
+                    }
                 }
             }
         }
@@ -37,6 +46,34 @@ section.section__experience {
 
             h3 {
                 color: #ffc853;
+            }
+        }
+
+        .left__triangle__wrapper {
+            height: 231px;
+            position: relative;
+            width: 266px;
+
+            .left__triangle {
+                height: 231px;
+                width: 266px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+
+                h3 {
+                    color: #ff5253;
+                    margin-bottom: 40px;
+                }
+            }
+
+            .triangle {
+                background: #ff5253;
+                clip-path: polygon(49% 0, 0% 100%, 14% 100%, 49% 25%, 48% 25%, 81% 87%, 17% 87%, 14% 100%, 100% 100%, 48% 0);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
             }
         }
 
