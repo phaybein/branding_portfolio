@@ -1,4 +1,5 @@
 section.section__experience {
+
     .experience__left {
 
         .left__square {
@@ -21,11 +22,28 @@ section.section__experience {
 
                 h3 {
                     color: $light;
-                    font-size: 17px;
-                    letter-spacing: 2px;
-                    text-transform: uppercase;
                 }
             }
+        }
+
+        .left__circle {
+            border: 30px solid #ffc853;
+            border-radius: 50%;
+            height: 213px;
+            width: 213px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h3 {
+                color: #ffc853;
+            }
+        }
+
+        h3 {
+            font-size: 17px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
     }
 }
