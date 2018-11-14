@@ -1,4 +1,10 @@
 section {
+    margin-bottom: 2.18rem;
+
+    @include laptop {
+        margin-bottom: 7.18rem;
+    }
+
     .portfolio {
         &__title {
             background: #ffeded;
