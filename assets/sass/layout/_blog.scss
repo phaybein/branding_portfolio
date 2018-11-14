@@ -30,7 +30,6 @@
         }
 
         .blog__media {
-            box-shadow: $box-shadow;
             margin-bottom: 2rem;
 
             @include smLaptop {
@@ -47,7 +46,8 @@
             }
 
             .blog__media__right {
-                margin: 1.954rem 1.36rem 1.36rem;
+                background: #fff;
+                padding: 1.954rem 1.36rem 1.36rem;
 
                 .blog__media__title {
                     font-size: 0.72rem;
@@ -58,6 +58,8 @@
                 }
 
                 .blog__media__info {
+                    color: #939393;
+                    font-weight: 300;
                     margin-bottom: 1.59rem;
                 }
 
