@@ -1,12 +1,15 @@
 .media {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .media__left {
-    padding-right: 5px;
+    flex-grow: 1;
+    margin-bottom: 1.59rem;
 }
 
 .media__right {
-    padding-left: 5px;
+    flex-basis: 13.09rem;
+    flex-grow: 9999;
 }
