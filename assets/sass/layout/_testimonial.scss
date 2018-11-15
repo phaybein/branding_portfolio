@@ -1,6 +1,22 @@
 .testimonial {
-    &__title {
+    &__title.logo-title {
+        background: #ffeded;
+
         h2 {}
+    }
+
+    img {
+        border-radius: $border-radius;
+
+        @include tablet {
+            height: 222px;
+            width: 122px;
+        }
+
+        @include smLaptop {
+            height: 472px;
+            width: 172px;
+        }
     }
 
     &__layout {
@@ -13,32 +29,84 @@
         }
 
         .testimonial__left {
+            @include tablet {
+                margin-right: 18px;
+            }
+
             img {}
         }
 
         .testimonial__center {
+            box-shadow: $box-shadow--4;
             color: $gray;
+            padding: 2.5rem 2.36rem;
 
             .testimonial__center__media {
-                img {}
+                img {
+                    margin-bottom: 0.45rem;
+
+                    @include tablet {
+                        height: 160px;
+                        width: 160px;
+                    }
+
+                    @include smLaptop {
+                        margin-bottom: 2.5rem;
+                        margin-right: 1.863rem;
+                    }
+                }
 
                 .media__body {
+                    margin-bottom: 0.9rem;
+
                     h3 {
                         @include fontSize(17rem);
 
                         font-weight: 800;
                         letter-spacing: 2px;
                         text-transform: uppercase;
+
+                        @include smLaptop {
+                            margin-bottom: 7px;
+                        }
                     }
 
-                    small {}
+                    small {
+                        @include fontSize(16rem);
+                        text-transform: capitalize;
+                    }
                 }
             }
 
-            .testimonial__center__info {}
+            .testimonial__center__info {
+
+                p {
+                    @include fontSize(21rem);
+                    color: #929292;
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                    line-height: 1.7;
+                    margin-bottom: 1.681rem;
+                }
+
+                .testimonial__center__signature {
+                    height: auto;
+                    object-fit: fill;
+                    width: 50%;
+
+                    @include tablet {
+                        width: 172px;
+                    }
+                }
+            }
+
         }
 
         .testimonial__right {
+            @include tablet {
+                margin-left: 18px;
+            }
+
             img {}
         }
 
