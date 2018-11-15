@@ -1,0 +1,46 @@
+.testimonial {
+    &__title {
+        h2 {}
+    }
+
+    &__layout {
+        .box {
+            margin-bottom: 2rem;
+        }
+
+        @include tablet {
+            display: flex;
+        }
+
+        .testimonial__left {
+            img {}
+        }
+
+        .testimonial__center {
+            color: $gray;
+
+            .testimonial__center__media {
+                img {}
+
+                .media__body {
+                    h3 {
+                        @include fontSize(17rem);
+
+                        font-weight: 800;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                    }
+
+                    small {}
+                }
+            }
+
+            .testimonial__center__info {}
+        }
+
+        .testimonial__right {
+            img {}
+        }
+
+    }
+}

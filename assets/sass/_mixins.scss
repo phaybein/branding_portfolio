@@ -4,6 +4,10 @@
     background: rgba($color, $opacity);
 }
 
+@mixin fontSize($fontSize) {
+    font-size: $fontSize / 22;
+}
+
 // MEDIA QUERIES
 @mixin tablet {
     @media screen and (min-width: #{$tablet}) {
