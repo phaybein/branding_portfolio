@@ -20,12 +20,39 @@
     }
 
     &__layout {
+
         .box {
             margin-bottom: 2rem;
+
+            &__slide {
+                cursor: pointer;
+                position: relative;
+
+                &:hover h3 {
+                    height: 100%;
+                    opacity: 1;
+                }
+
+            }
+
+            h3 {
+                color: $light;
+                font-weight: 300;
+                height: 0;
+                opacity: 0;
+                text-shadow: $text-shadow;
+                text-transform: uppercase;
+                transform: translate(-50%, -50%);
+                transition: $transition;
+                position: absolute;
+                left: 50%;
+            }
         }
 
         @include tablet {
             display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .testimonial__left {
@@ -59,6 +86,10 @@
                 .media__body {
                     margin-bottom: 0.9rem;
 
+                    @include smLaptop {
+                        margin-bottom: 0;
+                    }
+
                     h3 {
                         @include fontSize(17rem);
 
@@ -67,6 +98,7 @@
                         text-transform: uppercase;
 
                         @include smLaptop {
+                            margin-top: 2.18rem;
                             margin-bottom: 7px;
                         }
                     }

@@ -52,4 +52,5 @@ $box-shadow--3: 0 5px 11px 0 rgba(0, 0, 0, .18),
 $box-shadow--4: 0px 38px 108px 8px rgba(0, 0, 0, 0.09);
 $box-shadow--inset: inset 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 $transition: all 400ms ease-in-out;
-$text-shadow: 0 3px 6px rgba(0, 0, 0, 0.22);
+$text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4),
+0px 3px 6px rgba(0, 0, 0, 0.22);
