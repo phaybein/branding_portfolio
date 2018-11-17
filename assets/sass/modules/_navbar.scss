@@ -5,19 +5,36 @@ nav {
         align-items: center;
         justify-content: space-between;
 
-        .nav__logo {
-            background: $dark;
-            color: $light;
-            font-size: 1.5rem;
-            font-weight: 700;
-            padding: 15px 20px;
-            text-transform: uppercase;
+
+        .nav__logo.logo {
+
+            .logo__name {
+                background: $dark;
+                color: $light;
+                font-size: 1.3rem;
+                font-weight: 700;
+                padding: 5px 10px;
+                text-transform: uppercase;
+                text-decoration: none;
+
+                @include tablet {
+                    font-size: 1.5rem;
+                    padding: 15px 20px;
+                }
+
+            }
         }
 
         .nav__menu {
-            font-size: 1rem;
-            text-align: right;
-            text-transform: uppercase;
+            display: none;
+
+            @include tablet {
+                display: block;
+                font-size: 1rem;
+                text-align: right;
+                text-transform: uppercase;
+
+            }
 
             a {
                 color: $dark;
@@ -30,6 +47,29 @@ nav {
                     color: $secondary;
                     font-weight: 600;
                 }
+            }
+        }
+
+        .nav__menu--mobile {
+
+
+            @include tablet {
+                display: none;
+            }
+
+            a {
+                color: $dark;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+
+        .nav__menu__btn {
+            font-size: 2rem;
+            padding: 15px;
+
+            @include tablet {
+                display: none;
             }
         }
     }
