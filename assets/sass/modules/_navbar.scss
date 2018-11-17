@@ -1,6 +1,7 @@
 nav {
+    margin: 20px 0;
+
     .container {
-        padding: 20px 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -51,14 +52,30 @@ nav {
         }
 
         .nav__menu--mobile {
-
+            background: white;
+            box-shadow: $box-shadow;
+            height: 100vh;
+            transform: translate3d(-100%, 0, 0);
+            transition: transform 0.4s ease-in-out;
+            width: 80%;
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
 
             @include tablet {
                 display: none;
             }
 
+            &.active {
+                transform: translate3d(0, 0, 0);
+            }
+
             a {
                 color: $dark;
+                padding: 15px;
                 text-decoration: none;
                 text-transform: uppercase;
             }
