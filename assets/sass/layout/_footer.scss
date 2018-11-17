@@ -1,0 +1,38 @@
+footer.footer__main {
+    background: #f9fafc;
+    color: $dark;
+    padding: 2.45rem 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    .footer__social-icons {
+
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        max-width: 500px;
+
+        a {
+            color: $gray;
+            display: inline-block;
+            font-size: 2rem;
+            padding: 0 10px;
+            text-decoration: none;
+            transition: $transition;
+
+            &:hover {
+                color: #ff5253;
+            }
+        }
+    }
+
+    h5 {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    h6 {
+        font-size: 0.8rem;
+        text-transform: capitalize;
+    }
+}
