@@ -1,0 +1,19 @@
+.video__grandparent {
+    margin: 0 auto;
+    width: 100%;
+
+    @include smLaptop {
+        max-width: 70%;
+    }
+
+    .video__parent {
+        padding-bottom: 56.25%;
+        position: relative;
+
+        iframe {
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
+    }
+}

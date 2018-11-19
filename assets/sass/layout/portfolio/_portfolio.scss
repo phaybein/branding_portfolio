@@ -1,0 +1,93 @@
+.portfolio__project {
+    h3 {
+        font-weight: 700;
+        margin-bottom: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include smLaptop {
+            text-align: left;
+        }
+    }
+
+    .project__image {
+        margin-bottom: 3rem;
+
+        .image {
+            background: url(//cdn.dribbble.com/users/757683/screenshots/5547811/b_08_4x.jpg) no-repeat center/cover;
+            height: 50vh;
+        }
+    }
+
+    h1 {
+        font-style: italic;
+        text-align: center;
+
+        @include smLaptop {
+            text-align: left;
+        }
+    }
+
+    .portfolio__project__info {
+        margin-bottom: 2rem;
+        text-align: center;
+
+        @include smLaptop {
+            text-align: left;
+        }
+
+        .btn--primary {
+            background: $dark;
+            color: $light;
+            margin-bottom: 1rem;
+            min-width: 240px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background: lighten($dark, 20);
+            }
+
+            i {
+                font-size: 1.2rem;
+                padding-right: 10px;
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+    }
+
+    .portfolio__project__technologies {
+
+
+        .technologies__icons {
+            margin-bottom: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            img {
+                cursor: pointer;
+                filter: grayscale(60%);
+                padding: 10px;
+                transition: $transition;
+                width: 50%;
+
+                &:hover {
+                    filter: grayscale(0);
+                }
+
+                @include tablet {
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    .portfolio__project__video {}
+
+
+}
