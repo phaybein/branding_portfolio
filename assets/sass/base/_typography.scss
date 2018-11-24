@@ -52,7 +52,8 @@ small {
     font-size: 0.833rem;
 }
 
-p {
+p, ol {
+    margin: 0 auto;
     max-width: 65ch;
 }
 

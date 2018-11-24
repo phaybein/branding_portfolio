@@ -9,34 +9,8 @@
     min-width: 0;
 }
 
-ol {
-    counter-reset: li-counter;
-    list-style-type: none;
-}
-ol > li{
-    position: relative;
-    margin-bottom: 1rem;
-    padding-left: 0.5rem;
-    min-height: 1.5rem;
-    border-left: 2px solid $gray;
-}
-ol > li:before {
-    position: absolute;
-    top: 0;
-    left: -2rem;
-    width: 1.5rem;
-     
-    font-size: 1.5rem;
-    line-height: 1;
-    font-weight: 800;
-    text-align: right;
-    color: $dark;
- 
-    content: counter(li-counter);
-    counter-increment: li-counter;
-}
-
-ol,p {
+ol,
+p {
     color: #929292;
     line-height: 1.5;
     margin-bottom: 1.5rem;
