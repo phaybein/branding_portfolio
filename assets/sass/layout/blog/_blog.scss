@@ -1,3 +1,21 @@
-.main__blog {
+.blog {
     background: $light;
+
+    &__title {
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__copy {
+        color: $light-gray;
+        font-size: 0.5rem;
+        text-align: center;
+        text-transform: uppercase;
+
+        h4 {
+            color: $gray;
+            font-size: 0.8rem;
+        }
+    }
 }

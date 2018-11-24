@@ -58,7 +58,7 @@
 
   <main class="main__blog blog">
     <div class="container">
-
+      <h1 class="blog__title">6 STEPS TO EASILY CREATE A REPONSIVE YOUTUBE VIDEO</h1>
       <div class="blog__video video__grandparent">
         <div class="video__parent">
           <iframe src="https://www.youtube.com/embed/Xbsa0WhZAuM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -74,34 +74,53 @@
 
       <ol>
         <li>Remove the width and height from the iframe ( the YouTube Video ) going forward I will be referencing the
-          YouTube video you grabbed the embed code by iframe.</li>
+          YouTube video you grabbed the embed code by iframe.
+          <img src="//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/blog-youtube/youtube-step1.PNG"
+            alt="image of html code"></li>
 
-        <li>Next up, let us add a div around the iframe and give this new div a class of video__iframe so we can add
+        <li>Next up, let us add a div around the iframe and give this new div a class of
+          video__iframe so we can add
           some styles to this div. I use BEM for my naming convention, this is why you see the ' __ ' ( double
           underscore ). If you have not heard of BEM, I recommend checking it out. Depending on your needs, you may
           want to add your styles to your stylesheet or as a component. For this purpose, we will add the styles to the
-          parent div inline.</li>
+          parent div inline.
+          <img src="//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/blog-youtube/youtube-step2.PNG"
+            alt="image of html code"></li>
 
-        <li>Add ' position: relative ' to the class .video__parent</li>
+        <li>Add ' position: relative ' to the class .video__parent
+          <img src="//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/blog-youtube/youtube-step3.PNG"
+            alt="image of html code"></li>
 
-        <li>Add ' position: absolute ' to the iframe, again for this purpose we are using inline styles.</li>
+        <li>Add ' position: absolute ' to the iframe, again for this purpose we are using inline styles.
+          <img src="//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/blog-youtube/youtube-step4.PNG"
+            alt="image of html code"></li>
 
-        <li>This step we will now add ' height: 100% ' and ' width: 100% ' back to the iframe.</li>
+        <li>This step we will now add ' height: 100% ' and ' width: 100% ' back to the iframe.
+          <img src="//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/blog-youtube/youtube-step5.PNG"
+            alt="image of html code"></li>
 
         <li>Last but not least, let us add ' padding-bottom: 56.25% ' to .video__parent You are now done! If you are
           wondering why we added a padding-bottom 56.25% to our .video__parent, it is because this is the aspect ratio
           of most videos ( 16:9 ). The math is 9 / 16 * 100 = 56.25. If your aspect ratio is different, then you would
-          do the same just with your numbers. </li>
+          do the same just with your numbers.
+          <img src="//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/blog-youtube/youtube-step6.PNG"
+            alt="image of html code"></li>
       </ol>
 
       <p>There you go, you now have a fully mobile responsive YouTube video. Here is a bonus tip: Your YouTube video is
         now responsive but you do not want to have it full width of your browser or container, I got you. Add a div
         around the .video__parent and set the ' max-width ' to the maximum size you would want your video to be. I go
-        into this in the video as well towards the end.</p>
+        into this in the video as well towards the end.
+        <img src="//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/blog-youtube/youtube-finished.PNG"
+          alt="image of finished html code"> </p>
 
-      <p>Thank you for taking some time to check out my blog post. I hope you visit again soon! </p>
+      <p>Thank you for taking the time to check out my blog post on how to create a responsive YouTube video in 6
+        steps. I hope you visit again soon! </p>
 
-      <p>- MFM</p>
+      <div class="blog__copy">
+        <h4>- mauro m. |<span> November 24, 2018</span></h4>
+
+      </div>
 
     </div>
   </main>
