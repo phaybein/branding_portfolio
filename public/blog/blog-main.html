@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>FMWebCo | Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+  <!-- START SECTION NAVIGATION -->
+  <nav class="nav__main nav">
+    <div class="container">
+      <div class="nav__logo logo">
+        <a class="logo__name" href="/index.html">mfm</a>
+      </div>
+
+      <div class="nav__menu">
+        <a href="/index.html">Home</a>
+
+        <a href="/index.html#services">Services</a>
+
+        <a href="/index.html#portfolio">Portfolio</a>
+
+        <a href="/index.html#experience">Experience</a>
+
+        <a href="/index.html#blog">Blog</a>
+
+        <a href="/index.html#testimonials">Testimonials</a>
+      </div>
+
+      <!-- START MOBILE NAV -->
+      <div class="nav__menu--mobile">
+        <a href="/index.html">Home</a>
+
+        <a href="/index.html#services">Services</a>
+
+        <a href="/index.html#portfolio">Portfolio</a>
+
+        <a href="/index.html#experience">Experience</a>
+
+        <a href="/index.html#blog">Blog</a>
+
+        <a href="/index.html#testimonials">Testimonials</a>
+      </div>
+
+      <div class="nav__menu__btn">
+        <i class="icon ion-ios-menu"></i>
+      </div>
+      <!-- END MOBILE NAV -->
+    </div>
+
+  </nav>
+
+  <!-- END SECTION NAVIGATION -->
+
+  <main class="main__blog blog">
+    <div class="container">
+
+      <div class="blog__video video__grandparent">
+        <div class="video__parent">
+          <iframe src="https://www.youtube.com/embed/Xbsa0WhZAuM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <p>Have you had a situation where you placed an embedded YouTube video on your page and then came to notice that the video was not responsive? You would think that since you grabbed the video embed code directly from YouTube, it would already be responsive and you would not have to worry about it. Nope, the buck gets passed to you. Do not fret, I will show you in six steps how to make your video responsive and also a bonus tip! These are the steps I use when I am not using a framework for building websites.</p>
+
+      <ol>
+        <li>Remove the width and height from the iframe ( the YouTube Video ) going forward I will be referencing the YouTube video you grabbed the embed code by iframe.</li>
+
+        <li>Next up, let us add a div around the iframe and give this new div a class of video__iframe so we can add some styles to this div. I use BEM for my naming convention, this is why you see the ' __ ' ( double underscore ). If you have not heard of BEM, I recommend checking it out. Depending on your needs, you may want to add your styles to your stylesheet or as a component. For this purpose, we will add the styles to the parent div inline.</li>
+
+        <li>Add ' position: relative ' to the class .video__parent</li>
+
+        <li>Add ' position: absolute ' to the iframe, again for this purpose we are using inline styles.</li>
+
+        <li>This step we will now add ' height: 100% ' and ' width: 100% ' back to the iframe.</li>
+
+        <li>Last but not least, let us add ' padding-bottom: 56.25% ' to .video__parent You are now done! If you are wondering why we added a padding-bottom  56.25% to our .video__parent, it is because this is the aspect ratio of most videos ( 16:9 ). The math is 9 / 16 * 100 = 56.25. If your aspect ratio is different, then you would do the same just with your numbers. </li>
+      </ol>
+
+        <p>There you go, you now have a fully mobile responsive YouTube video. Here is a bonus tip: Your YouTube video is now responsive but you do not want to have it full width of your browser or container, I got you. Add a div around the .video__parent and set the ' max-width ' to the maximum size you would want your video to be. I go into this in the video as well towards the end.</p>
+
+        <p>Thank you for taking some time to check out my blog post. I hope you visit again soon! </p>
+        
+    </div>
+  </main>
+
+  <!-- START SECTION FOOTER -->
+  <footer class="footer__main">
+    <div class="container">
+      <div class="footer__social-icons">
+        <a href="//facebook.com" target="_blank">
+          <i class="icon ion-logo-facebook"></i>
+        </a>
+
+        <a href="//dribbble.com" target="_blank">
+          <i class="icon ion-logo-dribbble"></i>
+        </a>
+
+        <a href="//twitter.com" target="_blank">
+          <i class="icon ion-logo-twitter"></i>
+        </a>
+
+        <a href="//instagram.com" target="_blank">
+          <i class="icon ion-logo-instagram"></i>
+        </a>
+      </div>
+
+      <h5>Mauro Fabian Martinez</h5>
+
+      <h6>Web Developer</h6>
+    </div>
+  </footer>
+  <!-- END SECTION FOOTER -->
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
