@@ -14,7 +14,7 @@
         margin-bottom: 3rem;
 
         .image {
-            background: url(//cdn.dribbble.com/users/757683/screenshots/5547811/b_08_4x.jpg) no-repeat center/cover;
+            background: url(//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/portfolio_social/social-redesign-code.jpg) no-repeat center/cover;
             height: 50vh;
         }
     }
@@ -72,6 +72,8 @@
             img {
                 cursor: pointer;
                 filter: grayscale(60%);
+                max-height: 200px;
+                object-fit: contain;
                 padding: 10px;
                 transition: $transition;
                 width: 50%;
