@@ -1,0 +1,10 @@
+.portfolio__project {
+
+    .project__image {
+
+        &__html-email {
+            background: url(//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/portfolio_html_email/portfolio-html-email.jpg) no-repeat center/cover;
+            height: 50vh;
+        }
+    }
+}
