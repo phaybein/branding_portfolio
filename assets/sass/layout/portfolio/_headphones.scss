@@ -1,0 +1,10 @@
+.portfolio__project {
+
+    .project__image {
+
+        &__headphones {
+            background: url(//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/portfolio_headphones/portfolio_headphones_mockup.jpg) no-repeat center/cover;
+            height: 50vh;
+        }
+    }
+}

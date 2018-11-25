@@ -1,0 +1,10 @@
+.portfolio__project {
+
+    .project__image {
+
+        &__social {
+            background: url(//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/portfolio_social/social-redesign-code.jpg) no-repeat center/cover;
+            height: 50vh;
+        }
+    }
+}
