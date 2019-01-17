@@ -1,61 +1,72 @@
 section {
-    margin-bottom: 2.18rem;
+  margin-bottom: 2.18rem;
 
-    @include laptop {
-        margin-bottom: 7.18rem;
+  @include laptop {
+    margin-bottom: 7.18rem;
+  }
+
+  .portfolio {
+    &__title {
+      background: #ffeded;
     }
 
-    .portfolio {
-        &__title {
-            background: #ffeded;
-        }
+    &__grid {
+      .portfolio__image {
+        text-decoration: none;
+        transition: $transition;
+      }
 
-        &__grid {
-            .portfolio__image {
-                text-decoration: none;
-                transition: $transition;
-            }
-        }
-
-        &__image-1 {
-            background: url('//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/portfolio_social/social-redesign-code.jpg')no-repeat center/cover;
-            grid-column: 1 / 3;
-        }
-
-        &__image-2 {
-            background: url('//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/portfolio_headphones/portfolio_headphones_mockup.jpg')no-repeat center/cover;
-            grid-column: 3;
-            grid-row: 1 / 3;
-        }
-
-        &__image-3 {
-            background: url('//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/portfolio_html_email/portfolio-html-email-iphone-x.jpg')no-repeat center/cover;
-            grid-column: 1;
-            grid-row: 2 / 4;
-        }
-
-        &__image-4 {
-            background: url('https://cdn.dribbble.com/users/107759/screenshots/3775823/angled-down-3.gif')no-repeat center/cover;
-            grid-column: 2;
-            grid-row: 2 / 5;
-        }
-
-        &__image-5 {
-            background: url('https://cdn.dribbble.com/users/374494/screenshots/4533746/p-360_viewing_property_app.png')no-repeat center/cover;
-            grid-column: 1;
-            grid-row: 4 / 6;
-        }
-
-        &__image-6 {
-            background: url('https://cdn.dribbble.com/users/1846841/screenshots/4395558/v-u-l-p-a.gif')no-repeat center/cover;
-            grid-column: 2;
-            grid-row: 5 / 6;
-        }
-
-        &__image-7 {
-            background: url('  https://cdn.dribbble.com/users/1846841/screenshots/5180788/c_a_d_i_z.gif')no-repeat center/cover;
-            grid-column: 3;
-            grid-row: 3 / 6;
-        }
+      @include laptop {
+        grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+      }
     }
+
+    &__image-1 {
+      background: url('//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/portfolio_social/social-redesign-code.jpg')
+        no-repeat center/cover;
+      // grid-column: 1 / 3;
+    }
+
+    &__image-2 {
+      background: url('//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/portfolio_headphones/portfolio_headphones_mockup.jpg')
+        no-repeat center/cover;
+      // grid-column: 3;
+      // grid-row: 1 / 3;
+    }
+
+    &__image-3 {
+      background: url('//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/portfolio_html_email/portfolio-html-email-iphone-x.jpg')
+        no-repeat center/cover;
+      // grid-column: 1;
+      // grid-row: 2 / 4;
+    }
+
+    &__image-4 {
+      background: url('https://cdn.dribbble.com/users/107759/screenshots/3775823/angled-down-3.gif')
+        no-repeat center/cover;
+      // grid-column: 2;
+      // grid-row: 2 / 5;
+    }
+
+    &__image-5 {
+      background: url('https://cdn.dribbble.com/users/374494/screenshots/4533746/p-360_viewing_property_app.png')
+        no-repeat center/cover;
+      // grid-column: 1;
+      // grid-row: 4 / 6;
+    }
+
+    &__image-6 {
+      background: url('https://cdn.dribbble.com/users/1846841/screenshots/4395558/v-u-l-p-a.gif')
+        no-repeat center/cover;
+      // grid-column: 2;
+      // grid-row: 5 / 6;
+    }
+
+    &__image-7 {
+      background: url('  https://cdn.dribbble.com/users/1846841/screenshots/5180788/c_a_d_i_z.gif')
+        no-repeat center/cover;
+      // grid-column: 3;
+      // grid-row: 3 / 6;
+    }
+  }
 }
