@@ -1,97 +1,94 @@
 .section__blog {
-    background: #f9fafc;
-    padding-bottom: 7.54rem;
+  background: #f9fafc;
+  padding-bottom: 7.54rem;
 
-    .blog__title {
-        font-size: 27px;
-        font-weight: 800;
-        letter-spacing: 8px;
-        margin-bottom: 4.54rem;
-        padding-top: 3.63rem;
-        text-transform: uppercase;
-        text-align: center;
+  .blog__title {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: 8px;
+    margin-bottom: 4.54rem;
+    padding-top: 3.63rem;
+    text-transform: uppercase;
+    text-align: center;
 
-        @include tablet {
-            font-size: 2.59rem;
-            padding-top: 6.63rem;
-        }
+    @include tablet {
+      font-size: 2.59rem;
+      padding-top: 6.63rem;
+    }
+  }
+
+  .blog__grid {
+    display: block;
+    @include smLaptop {
+      grid-column-gap: 15px;
     }
 
-    .blog__grid {
+    .blog__main {
+      grid-column: 1 /3;
+      grid-row: 1;
+
+      img {
+        max-height: initial !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+    }
+
+    .blog__media {
+      margin-bottom: 2rem;
+
+      @include smLaptop {
+        margin-bottom: 0;
+      }
+
+      .blog__media__left {
+        flex-basis: 17.318rem;
 
         @include smLaptop {
-            grid-column-gap: 15px;
+          text-align: center;
         }
 
-        .blog__main {
+        img {
+          border-top-left-radius: $border-radius;
+          border-top-right-radius: $border-radius;
+          object-fit: cover;
+          max-width: 320px;
 
-            grid-column: 1 /3;
-            grid-row: 1;
+          @include smLaptop {
+            width: 80%;
+          }
 
-            img {
-                height: initial;
-                max-height: initial !important;
-                width: 100% !important;
-                max-width: 100% !important;
-            }
+          @include laptop {
+            width: 100%;
+          }
+        }
+      }
+
+      .blog__media__right {
+        background: #fff;
+        padding: 1.954rem 1.36rem 1.36rem;
+
+        .blog__media__title {
+          font-size: 0.72rem;
+          font-weight: 600;
+          letter-spacing: 2px;
+          margin-bottom: 1.136rem;
+          text-transform: uppercase;
         }
 
-        .blog__media {
-            margin-bottom: 2rem;
-
-            @include smLaptop {
-                margin-bottom: 0;
-            }
-
-            .blog__media__left {
-                flex-basis: 17.318rem;
-
-                @include smLaptop {
-                    text-align: center;
-                }
-
-                img {
-                    border-top-left-radius: $border-radius;
-                    border-top-right-radius: $border-radius;
-                    object-fit: contain;
-                    max-width: 320px;
-
-                    @include smLaptop {
-                        width: 80%;
-                    }
-
-                    @include laptop {
-                        width: 100%;
-                    }
-
-                }
-            }
-
-            .blog__media__right {
-                background: #fff;
-                padding: 1.954rem 1.36rem 1.36rem;
-
-                .blog__media__title {
-                    font-size: 0.72rem;
-                    font-weight: 600;
-                    letter-spacing: 2px;
-                    margin-bottom: 1.136rem;
-                    text-transform: uppercase;
-                }
-
-                .blog__media__info {
-                    color: #939393;
-                    font-weight: 300;
-                    margin-bottom: 1.59rem;
-                }
-
-                .blog__media__info {
-                    color: $gray;
-                    font-weight: 100;
-                    font-size: 0.81rem;
-                    letter-spacing: 1px;
-                }
-            }
+        .blog__media__info {
+          color: #939393;
+          font-weight: 300;
+          margin-bottom: 1.59rem;
         }
+
+        .blog__media__info {
+          color: $gray;
+          font-weight: 100;
+          font-size: 0.81rem;
+          letter-spacing: 1px;
+        }
+      }
     }
+  }
 }
