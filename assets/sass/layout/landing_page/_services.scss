@@ -1,48 +1,51 @@
 .services {
-    &__container {
-        .card-column-layout {
-            .call-out {
-                cursor: pointer;
-                padding-bottom: 2rem;
+  &__container {
+    .card-column-layout {
+      @include tablet {
+        flex-wrap: nowrap;
+      }
+      .call-out {
+        cursor: pointer;
+        padding-bottom: 2rem;
 
-                @include tablet {
-                    padding-bottom: 72px;
-                }
-
-                i {
-                    font-size: 3rem;
-                }
-
-                h4 {
-                    font-size: 0.77rem;
-                    letter-spacing: 3px;
-                    margin: 1rem 0;
-                    text-transform: uppercase;
-
-                    @include tablet {
-                        margin: 47px 0 31px;
-                    }
-                }
-
-                p {
-                    color: $gray;
-                    font-size: 0.86rem;
-                    font-weight: 100;
-                    letter-spacing: 1px;
-                }
-            }
-
-            .call-1 {
-                border-bottom: 4px solid #52b8ff;
-            }
-
-            .call-2 {
-                border-bottom: 4px solid #ff5253;
-            }
-
-            .call-3 {
-                border-bottom: 4px solid #ffc853;
-            }
+        @include tablet {
+          padding-bottom: 72px;
         }
+
+        i {
+          font-size: 3rem;
+        }
+
+        h4 {
+          font-size: 0.77rem;
+          letter-spacing: 3px;
+          margin: 1rem 0;
+          text-transform: uppercase;
+
+          @include tablet {
+            margin: 47px 0 31px;
+          }
+        }
+
+        p {
+          color: $gray;
+          font-size: 0.86rem;
+          font-weight: 100;
+          letter-spacing: 1px;
+        }
+      }
+
+      .call-1 {
+        border-bottom: 4px solid #52b8ff;
+      }
+
+      .call-2 {
+        border-bottom: 4px solid #ff5253;
+      }
+
+      .call-3 {
+        border-bottom: 4px solid #ffc853;
+      }
     }
+  }
 }
