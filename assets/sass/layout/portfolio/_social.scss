@@ -1,10 +1,19 @@
 .portfolio__project {
+  .project__image {
+    &__social {
+      background: url(../img/production/portfolio_social/social-redesign-code-mobile.jpg)
+        no-repeat center/cover;
+      height: 50vh;
 
-    .project__image {
+      @include tablet {
+        background: url(../img/production/portfolio_social/social-redesign-code-tablet.jpg)
+          no-repeat center/cover;
+      }
 
-        &__social {
-            background: url(//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/portfolio_social/social-redesign-code.jpg) no-repeat center/cover;
-            height: 50vh;
-        }
+      @include laptop {
+        background: url(../img/production/portfolio_social/social-redesign-code.jpg)
+          no-repeat center/cover;
+      }
     }
+  }
 }

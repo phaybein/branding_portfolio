@@ -1,10 +1,19 @@
 .portfolio__project {
+  .project__image {
+    &__headphones {
+      background: url(../img/production/portfolio_headphones/portfolio_headphones_mockup_mobile.jpg)
+        no-repeat center/cover;
+      height: 50vh;
 
-    .project__image {
+      @include tablet {
+        background: url(../img/production/portfolio_headphones/portfolio_headphones_mockup_tablet.jpg)
+          no-repeat center/cover;
+      }
 
-        &__headphones {
-            background: url(//raw.githubusercontent.com/phaybein/branding_portfolio/master/public/img/production/portfolio_headphones/portfolio_headphones_mockup.jpg) no-repeat center/cover;
-            height: 50vh;
-        }
+      @include laptop {
+        background: url(../img/production/portfolio_headphones/portfolio_headphones_mockup.jpg)
+          no-repeat center/cover;
+      }
     }
+  }
 }
