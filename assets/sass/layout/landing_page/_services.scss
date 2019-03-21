@@ -27,11 +27,16 @@
           }
         }
 
-        p {
+        p,
+        li {
           color: $gray;
           font-size: 0.86rem;
           font-weight: 100;
           letter-spacing: 1px;
+        }
+
+        li {
+          padding: 0.5rem 0;
         }
       }
 
