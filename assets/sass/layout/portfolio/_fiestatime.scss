@@ -1,0 +1,19 @@
+.portfolio__project {
+  .project__image {
+    &__fiestatime {
+      background: url('../img/portfolio_fiestatime/mobile-fiestatime.jpg')
+        no-repeat center/cover;
+      height: 50vh;
+
+      @include tablet {
+        background: url(../img/portfolio_fiestatime/tablet-fiestatime.jpg)
+          no-repeat center/cover;
+      }
+
+      @include laptop {
+        background: url(../img/portfolio_fiestatime/fiestatime.jpg)
+          no-repeat center/cover;
+      }
+    }
+  }
+}

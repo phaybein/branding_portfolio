@@ -56,12 +56,12 @@ section {
       // grid-row: 2 / 4;
     }
 
-    // &__image-4 {
-    //   background: url('https://cdn.dribbble.com/users/107759/screenshots/3775823/angled-down-3.gif')
-    //     no-repeat center/cover;
-    //   // grid-column: 2;
-    //   // grid-row: 2 / 5;
-    // }
+    &__image-4 {
+      background: url('../img/production/portfolio_fiestatime/fiestatime-portfolio.jpg')
+        no-repeat center/cover;
+      // grid-column: 2;
+      // grid-row: 2 / 5;
+    }
 
     // &__image-5 {
     //   background: url('https://cdn.dribbble.com/users/374494/screenshots/4533746/p-360_viewing_property_app.png')
